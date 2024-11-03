@@ -1,0 +1,64 @@
+/* banner part here */
+
+.banner-section{
+    background: var(--bg-theme);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-main{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    .banner-img{
+        max-width: 50%;
+        img{
+            width: 70%;
+        }
+    }
+    .banner-content{
+        width: 50%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .subtitle{
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .banner-title{
+            font-size: 90px;
+            line-height: 108px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            strong{
+                font-size: 90px;
+                line-height: 108px;
+                font-weight: 700;
+                color: var(--primary);
+                display: block;
+            }
+        }
+        .banner-desc{
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 400;
+            margin-bottom: 30px;
+            font-family: var(--font-family2);
+            margin-bottom: 60px;
+        }
+        .banner-desc {
+            span{
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 700;
+                margin-bottom: 30px;
+                font-family: var(--font-family2);
+            }
+        }
+       }
+}
+
