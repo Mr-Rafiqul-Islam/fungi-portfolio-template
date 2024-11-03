@@ -107,9 +107,47 @@ align-items: center;
     
 }
 
-.header-section .header-main .navBar .menus ul li a:hover{
+.header-section .header-main .navBar .menus ul li:hover > a{
     color: var(--primary);
 }
+/* sub menu css start here */
+.header-section .header-main .navBar .menus ul li{
+    position: relative;
+    line-height: 50px;
+}
+.header-section .header-main .navBar .menus ul li .sub-menu{
+    position: absolute;
+    padding:10px 0px 10px 15px;
+    display: block;
+    top: 60px;
+    left: 0;
+    width: 250px;
+    background: var(--bg-theme);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--primary);
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header-section .header-main .navBar .menus ul li:hover > .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-section .header-main .navBar .menus ul li > .sub-menu li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-section .header-main .navBar .menus ul li .sub-menu li .sub-menu{
+    left: 100%;
+    top: 0;
+}
+.header-section .header-main .navBar .menus ul li ul li{
+    margin-bottom: 10px;
+}
+/* sub menu css end here */
 .header-section .header-main .navBar .social-icons{
     display: flex;
     gap: 38.4px;
