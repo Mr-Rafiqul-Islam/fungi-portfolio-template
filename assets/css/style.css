@@ -226,6 +226,9 @@ ol {
   -webkit-transform-origin: top;
           transform-origin: top;
 }
+.header-section .header-main .navBar .menus ul li > .sub-menu li {
+  margin-bottom: 10px;
+}
 .header-section .header-main .navBar .menus ul li > .sub-menu li a {
   display: -webkit-box;
   display: -ms-flexbox;
